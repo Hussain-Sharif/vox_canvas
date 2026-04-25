@@ -1,15 +1,18 @@
-"use client"
+'use client'
 
-import React from 'react'
-import { Tldraw } from 'tldraw'
+import MainContextWindow from '@/engines/canvas/main-context-window'
+import { Tldraw} from 'tldraw'
 import 'tldraw/tldraw.css'
 
-const HomePage = () => {
+
+const Canvas = () => {
   return (
     <div style={{ position: 'fixed', inset: 0 }}>
-			<Tldraw />
-		</div>
+      <Tldraw persistenceKey='example' >
+		<MainContextWindow />
+      </Tldraw>
+    </div>
   )
 }
 
-export default HomePage
+export default Canvas
