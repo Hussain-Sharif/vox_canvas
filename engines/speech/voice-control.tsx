@@ -9,10 +9,10 @@ function VoiceControlPanel() {
   const [input, setInput] = useState('')
 
   const handleRun = () => {
-    // const commands = parseCommand(input)       // to write
-    // commands.forEach(cmd => executeCommand(editor, cmd))
+    const commands = parseCommand(input)       // to write
+    commands.forEach(cmd => executeCommand(editor, cmd))
     setInput('')
-  }
+  } 
 
   return (
     <div style={{ ...overlayBase, bottom: 80, left: 16, display: 'flex', gap: 8 }}>

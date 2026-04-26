@@ -4,7 +4,7 @@ import { Command } from '../utils/types'
 
 export function executeCommand(editor: Editor, command: Command) {
   switch (command.type) {
-    case 'CREATE_RECT': {
+    case 'CREATE_SHAPE': {
       const screenPoint =
         command.position === 'cursor'
           ? editor.inputs.getCurrentScreenPoint()   // or getCurrentPagePoint 
