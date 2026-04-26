@@ -9,7 +9,7 @@ const Canvas = () => {
   return (
     <div style={{ position: 'fixed', inset: 0 }}>
       <Tldraw persistenceKey='example' >
-		<MainContextWindow />
+		    <MainContextWindow />
       </Tldraw>
     </div>
   )
